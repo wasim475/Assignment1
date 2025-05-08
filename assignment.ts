@@ -1,15 +1,15 @@
-//Problem-01
+
 function formatString(input: string, toUpper: boolean = true):string{
     return toUpper? input.toUpperCase(): input.toLowerCase()
 }
 
-// Problem-02
+
 
 function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[]{
     return items.filter(item=> item.rating>=4)
 }
 
-// Problem-03
+
 
 function concatenateArrays<T>(...arrays: T[][]): T[]{
     let result:T[] = []
@@ -21,7 +21,7 @@ function concatenateArrays<T>(...arrays: T[][]): T[]{
     return result
 }
 
-// Problem-04
+
 
 class Vehicle{
     private make: string
@@ -51,7 +51,7 @@ class Vehicle{
   }
 
 
-//   Problem-05
+
 
 function processValue(value: string | number): number{
     if(typeof value === 'string'){
@@ -61,7 +61,7 @@ function processValue(value: string | number): number{
     }
 }
 
-// problem-06
+
 
 interface Product{
     name: string;
@@ -83,7 +83,7 @@ interface Product{
     return mostExpensive
   }
 
-//   Problem-07
+
 
 enum Day{
     Monday,
@@ -102,7 +102,7 @@ enum Day{
     return "Weekday"
   }
 
-//   Problem-08
+
 
 async function squareAsync(n: number): Promise<number>{
     if (n < 0) {
