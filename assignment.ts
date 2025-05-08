@@ -1,5 +1,5 @@
 //Problem-01
-function formatString(input: string, toUpper?: boolean = true):string{
+function formatString(input: string, toUpper: boolean = true):string{
     return toUpper? input.toUpperCase(): input.toLowerCase()
 }
 
@@ -9,7 +9,7 @@ function filterByRating(items: { title: string; rating: number }[]): { title: st
     return items.filter(item=> item.rating>=4)
 }
 
-// Problem-3
+// Problem-03
 
 function concatenateArrays<T>(...arrays: T[][]): T[]{
     let result:T[] = []
@@ -19,5 +19,45 @@ function concatenateArrays<T>(...arrays: T[][]): T[]{
         })
     })
     return result;
+}
+
+// Problem-04
+
+class Vehicle{
+    private make: string;
+    private year: number;
+  
+    constructor(make: string, year: number){
+      this.make = make;
+      this.year = year;
+    }
+  
+    public getInfo(): string{
+      return `Make: ${this.make}, Year: ${this.year}`;
+    }
+  }
+  
+  class Car extends Vehicle {
+    private model: string;
+  
+    constructor(make: string, year: number, model: string){
+      super(make, year);
+      this.model = model;
+    }
+  
+    public getModel(): string{
+      return `Model: ${this.model}`;
+    }
+  }
+
+
+//   Problem-05
+
+function processValue(value: string | number): number{
+    if(typeof value === 'string'){
+        return value.length;
+    }else{
+        return value *2
+    }
 }
 
