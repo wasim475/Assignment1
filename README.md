@@ -1,2 +1,3 @@
-# Assignment1
-Next Level Web Development Course
+#Blog about keyof, any, unknown and never
+
+I recently started learning TypeScript and to be honest, it was little confusing at first. One of the things I was strugling with was understanding the keyof keyword. It basicly allows you to get all the keys of a type as a union. I also learned about the diffrence between any, unkown and never. any lets you assign anything and TypeScript won’t check it, which can be dangerus. unknown is more safer because you need to check the type before using. And never is used when something should never happen, like in unreachable code. Learning these helped me write better and more clean code. It’s still a long journy but I’m enjoying learning new things step by step.
